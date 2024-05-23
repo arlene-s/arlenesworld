@@ -1,3 +1,15 @@
+@media screen and (max-width: 430px){
+    .left-about{
+        width: 300px;
+    }
+    .right-about{
+        width: 300px !important;
+    }
+    #portfolio .portfolios {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 
 @media screen and (max-width: 600px){
     header{
@@ -59,17 +71,21 @@
         padding-bottom: 6rem;
     }
 
-
+    #portfolio .portfolios {
+        grid-template-columns: 1fr !important;
+    }
 
     .portfolios{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
     }
 
+    /*
     .blogs{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
     }
+    */
     
     .section{
         padding: 2rem 2.5rem;

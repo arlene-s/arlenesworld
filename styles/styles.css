@@ -352,13 +352,19 @@ section {
   width: 70%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .assembly {
-  width: 30%;
+  width: 70%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 40%;
+  width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+  width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+  width: 30%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+  width: 50%;
 }
 
 .stat-title {
@@ -700,6 +706,17 @@ button {
   font-size: 6.3rem;
 }
 
+@media screen and (max-width: 430px) {
+  .left-about {
+    width: 300px;
+  }
+  .right-about {
+    width: 300px !important;
+  }
+  #portfolio .portfolios {
+    grid-template-columns: 1fr !important;
+  }
+}
 @media screen and (max-width: 600px) {
   header {
     padding: 0;
@@ -747,14 +764,19 @@ button {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
+  #portfolio .portfolios {
+    grid-template-columns: 1fr !important;
+  }
   .portfolios {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
-  .blogs {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+  /*
+  .blogs{
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
   }
+  */
   .section {
     padding: 2rem 2.5rem;
   }
